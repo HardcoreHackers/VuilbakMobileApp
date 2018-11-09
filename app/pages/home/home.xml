@@ -1,0 +1,21 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo" class="page">
+		<StackLayout class="form">
+			<Label class="header" text="ToDo App"/>
+			<Image class="logo" src="res://todo" stretch="aspectFit" />
+            <StackLayout class="input-field">
+                <TextField ref="email" class="input" hint="Email" keyboardType="email"/>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <TextField ref="password" id="password" class="input" hint="Password" secure="true" />
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <Button text="Login" class="btn btn-primary m-t-20"/>
+            
+            <Label text="Forgot your password?" class="login-label"/>
+            <Label text="Don't have an account?" class= "account" textWrap="true" />
+            <Button text="Sign up" tap="signup" class="signupbtn"/>
+                        
+        </StackLayout>
+</Page>
